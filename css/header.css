@@ -1,0 +1,273 @@
+.navbar{
+	background-color: white;
+	border: none;
+}
+.navbar-default{
+	margin-bottom: 0;
+}
+.bigHeader{
+	padding-left: 80px;
+}
+.container-user{
+	padding-left: 80px;
+	padding-right: 15px;
+	height: 115px;
+}
+.Big-logo{
+	display: inline-block;
+	width: 195px;
+	height: 80px;
+	margin-top: 18px;
+	background: url(../img/icons01.png) no-repeat 0 0;
+	vertical-align: middle;
+}
+.word-logo{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 8px 0 0 0;
+	padding-left: 25px;
+	color: #35c1ec;
+	font-size: 2.2em;
+	font-weight: 100;
+	letter-spacing: .3em;
+}
+.navbar-menu{
+	display: inline-block;
+	float: right;
+	height: 100%;
+	line-height: 115px;
+}
+.navbar-menu a:hover{
+	background: #32c1ed;
+	color: #fff;
+}
+.top-word-nav{
+	display: inline-block;
+}
+.top-word-nav a{
+	display: inline-block;
+	font-size: 1.14em;
+	margin: 0 3px;
+	padding: 3px 10px;
+	border-radius: 6px;
+	color: #555;
+}
+.top-login-btn{
+	display: inline-block;
+}
+.lineOne{
+	display: inline-block;
+	vertical-align: middle;
+	height: 25px;
+	margin-left: 5px;
+	border-left: 1px solid #2fb4e9;
+}
+.login-btn{
+	display: inline-block;
+	font-size: 1.14em;
+	margin: 0 3px;
+	padding: 3px 10px;
+	border-radius: 6px;
+	color: #555;
+}
+.user-logo{
+	display: inline-block;
+	font-size: inherit;
+	top: 2px;
+}
+
+@media screen and (max-width:1200px) {
+	.container-user{
+		padding-left: 40px;
+		padding-right: 15px;
+		height: 80px;
+	}
+	.Big-logo{
+		width: 152px;
+		height: 60px;
+		background: url(../img/icons01.png) no-repeat -202px 0;
+		margin-top: 10px;
+		margin-left: 20px;
+	}
+	.word-logo{
+		display: inline-block;
+		vertical-align: middle;
+		margin: 8px 0 0 0;
+		padding-left: 15px;
+		color: #35c1ec;
+		font-size: 1.6em;
+		font-weight: 100;
+		letter-spacing: .3em;
+	}
+	.navbar-menu{
+		display: inline-block;
+		float: right;
+		height: 100%;
+		line-height: 80px;
+	}
+}
+@media screen and (max-width:992px) {
+	.bigHeader{
+		padding-left: 20px!important;
+	}
+	.container-user{
+		padding-left: 20px;
+		padding-right: 15px;
+		height: 80px;
+	}
+	.word-logo{
+		display: inline-block;
+		vertical-align: middle;
+		margin: 8px 0 0 0;
+		padding-left: 15px;
+		color: #35c1ec;
+		font-size: 1.6em;
+		font-weight: 100;
+		letter-spacing: .3em;
+	}
+	.navbar-menu{
+		display: block;
+		/* display: none; */
+		float: right;
+		height: 100%;
+		width: 100%;
+		line-height: 80px;
+	}
+	.threeline-btn{
+		margin-right: 10px;
+		margin-top: 25px;
+	}
+	.menu1{
+		display: none;
+	}
+	.menu2{
+		position: absolute;
+		top: 80px;
+		right: 0;
+		z-index: 999;
+	}
+	#topNav2{
+		background-color: white;
+		box-shadow: 0 1px 5px #999;
+	}
+	.menu2 .tiems{
+		text-align: right;
+		display: block;
+		float: none!important;
+	}
+	.menu2 .login{
+		width: 100%;
+		float: right;
+		display: block;
+		text-align: right;
+		border-top: 1px solid #eee;
+	}
+	.lineOne{
+		display: none;
+	}
+}
+@media screen and (max-width:768px){
+	.container-user{
+		position: relative;
+		top: 0;
+		left: 0;
+		padding-left: 20px;
+		padding-right: 15px;
+		height: 60px;
+	}
+/* 	.navbar-nav{
+		margin-right: 0!important;
+	} */
+	.navbar-header{
+		margin-right: 0!important;
+	}
+	.Big-logo{
+		width: 105px;
+		height: 50px;
+		background: url(../img/smalllogo.png) no-repeat 0 0;
+		background-size: 100%;
+		margin-top: 10px;
+		margin-left: 20px;
+	}
+	.word-logo{
+		display: inline-block;
+		vertical-align: middle;
+		margin: 8px 0 0 0;
+		padding-left: 15px;
+		color: #35c1ec;
+		font-size: 1.2em;
+		font-weight: 500;
+		letter-spacing: .3em;
+	}
+	.container-user{
+		width: 100%;
+	}
+	.navbar-mene{
+		width: 100%;
+		background-color: white;
+	}
+	.top-word-nav{
+		display: block;
+		float: right;
+		height: 61px;
+		line-height: 61px;
+		padding-right: 6px;
+	}
+	.top-word-nav a{
+		display: inline-block;
+		font-size: 14px;
+		margin: 0 3px;
+		padding: 3px 3px;
+		border-radius: 6px;
+		color: #555;
+	}
+	.top-login-btn{
+		display: block;
+		/* margin-top: 76px; */
+	}
+	.top-login-btn a{
+		float: right;
+		font-size: 14px;
+	}
+	.top-login-btn .lineOne{
+		display: none;
+	}
+	#topNav{
+		width: 100%;
+		background-color: white;
+	}
+	.threeline-btn{
+		margin-right: 15px;
+		margin-top: 15px;
+	}
+	.menu1{
+		display: inline-block;
+		position: absolute;
+		top: 60px;
+		right: 0;
+		z-index: 1000;
+		width: 106%;
+	}
+	#topNav1{
+		background-color: white;
+		box-shadow: 0 1px 5px #999;
+	}
+	.menu1 .tiems{
+		text-align: right;
+		display: block;
+		float: none!important;
+		border-bottom: 1px solid #eee;
+	}
+	.menu1 .login{
+		width: 100%;
+		float: right;
+		display: block;
+		text-align: right;
+	}
+	.lineOne{
+		display: none;
+	}
+	.menu2{
+		display: none;
+	}
+}

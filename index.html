@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+	</head>
+	<style type="text/css">
+		:root{
+			--baseColor:#eee;
+		}
+		.container{
+			height: 60px;
+			background-color: var(--baseColor);
+			line-height: 60px;
+			padding: 0 100px;
+		}
+		.navbar-header{
+			font-size: 40px;
+		}
+		.container-fluid{
+			height: 300px;
+			background-color: var(--baseColor);
+			margin-top: 20px;
+		}
+		.container-fluid h1{
+			text-align: center;
+			color: black;
+			background-color: var(--baseColor);
+		}
+		.footers{
+			height: 200px;
+			background-color: var(--baseColor);
+			margin-top: 20px;
+		}
+		.input{
+			margin-top: 50px;
+		}
+		.input label{
+			display: block;
+			width: 100px;
+			margin: 0 auto;
+			text-align: center;
+		}
+		.input input{
+			width: 50%;
+			margin: 0 auto;
+		}
+		footer{
+			margin-top: 10px;
+			height: 80px!important;
+			background-color: var(--baseColor);
+		}
+	</style>
+	<body>
+		<nav>
+			<div class="container nav">
+				<div class="nav navbar-header">
+					logo
+				</div>
+				<div class="nav navbar-menu navbar-right">
+					<div>
+						换肤
+						<input type="color">
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="container-fluid">
+			<h1>title</h1>
+			<form class="input">
+				<label>用户名</label>
+				<input type="text" class="form-control">
+				<label>密码</label>
+				<input type="password" class="form-control">
+			</form>
+		</div>
+		<div class="container footers">
+			
+		</div>
+		
+		<footer class="container">
+			
+		</footer>
+	</body>
+</html>
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script>
+	let oNowColor = document.querySelector('input[type=color]');
+	var html = document.querySelector(':root');
+	oNowColor.onchange = function(){
+		html.style.setProperty('--baseColor',oNowColor.value);
+	}
+</script>
